@@ -20,6 +20,9 @@ def start_game():
         except ValueError:
             print("Please enter a valid number.")
             continue
+        except EOFError:
+            print("No input received. Exiting the game.")
+            return
         
         attempts += 1
         
